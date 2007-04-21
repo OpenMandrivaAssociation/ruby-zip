@@ -3,23 +3,20 @@
 %define oname rubyzip
 
 %define version 0.9.1
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Ruby module for reading and writing zip files
 Name: %name
 Version: %version
 Release: %release
 License: BSD-like
-Group: Development/Other
+Group: Development/Ruby
 URL: http://rubyzip.sourceforge.net
 Source0: %{oname}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: ruby-devel ruby-rake
 Buildarch: noarch
 Provides: %{oname}
-
-%{expand:%%define ruby_libdir %(ruby -rrbconfig -e "puts Config::CONFIG['sitelibdir']")}
-%{expand:%%define ruby_archdir %(ruby -rrbconfig -e "puts Config::CONFIG['sitearchdir']")}
 
 %description
 Ruby module for reading and writing zip files
@@ -42,6 +39,6 @@ ruby install.rb
 
 %files
 %defattr(-,root,root)
-%{ruby_libdir}/%{rname}
+%{ruby_sitelibdir}/%{rname}
 %doc ChangeLog NEWS README TODO samples/ 
 
