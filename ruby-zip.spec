@@ -3,7 +3,7 @@
 %define oname rubyzip
 
 %define version 0.9.1
-%define release %mkrel 4
+%define release %mkrel 5
 
 Summary: Ruby module for reading and writing zip files
 Name: %name
