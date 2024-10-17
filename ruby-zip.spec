@@ -11,7 +11,7 @@ Version: %version
 Release: %release
 License: BSD-like
 Group: Development/Ruby
-URL: http://rubyzip.sourceforge.net
+URL: https://rubyzip.sourceforge.net
 Source0: %{oname}-%{version}.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: ruby-devel ruby-rake
